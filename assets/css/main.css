@@ -5,9 +5,28 @@
 	box-sizing: border-box;
 }
 
+/* CSS Variables and reduced motion */
+:root {
+	--color-primary: #2d74da;
+	--color-primary-dark: #1c5ec0;
+	--color-accent: #5d84b7;
+	--bg: #f5f5f5;
+	--text-color: #111111;
+	--muted: #777777;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.001ms !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	background: #f5f5f5;
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+	background: var(--bg);
+	color: var(--text-color);
 }
 
 /* HEADER */
@@ -37,7 +56,7 @@ body {
 }
 
 .subscribe-btn {
-	background: #2d74da;
+	background: var(--color-primary);
 	color: #fff;
 	border: none;
 	padding: 7px 16px;
@@ -48,7 +67,7 @@ body {
 }
 
 .subscribe-btn:hover {
-	background: #1e5fbb;
+	background: var(--color-primary-dark);
 }
 
 /* LOGO */
@@ -166,7 +185,7 @@ body {
 .categories span {
 	font-size: 10px;
 	font-weight: 700;
-	color: #4f81bd;
+	color: var(--color-accent);
 	text-transform: uppercase;
 	margin-right: 5px;
 }
@@ -216,7 +235,7 @@ body {
 .hero-content p {
 	font-size: 14px;
 	line-height: 1.8;
-	color: #777;
+	color: var(--muted);
 	max-width: 700px;
 	margin: auto;
 }
@@ -241,7 +260,7 @@ body {
 	font-weight: 700;
 	margin-bottom: 20px;
 	letter-spacing: 2px;
-	color: #111;
+	color: var(--text-color);
 }
 
 .latest-post {
@@ -321,15 +340,15 @@ body {
 	margin-bottom: 20px;
 }
 
-.category-header h2 {
-	font-size: 11px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	color: #111;
-}
-
 .category-header a {
 	font-size: 12px;
+	text-decoration: none;
+	color: var(--muted);
+	transition: 0.3s;
+}
+.category-header a:hover {
+	color: var(--text-color);
+}
 	text-decoration: none;
 	color: #777;
 	transition: 0.3s;
@@ -565,6 +584,16 @@ body {
 	transform: translateY(-5px);
 }
 
+/* Keyframes: subtle fade-in for hero area */
+@keyframes fade-in {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-main {
+	animation: fade-in 600ms ease-out both;
+}
+
 /* VIDEO */
 .media-section {
 	max-width: 1400px;
@@ -655,7 +684,7 @@ table {
 }
 
 th {
-	background: #111;
+	background: var(--text-color);
 	color: #fff;
 	padding: 18px;
 	text-align: left;
@@ -705,6 +734,16 @@ tr:hover {
 	width: 280px;
 	border: 1px solid #ddd;
 	outline: none;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 3px solid rgba(45, 116, 218, 0.18);
+	outline-offset: 2px;
 }
 
 .newsletter-form button {

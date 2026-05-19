@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,10 +8,21 @@
 	<!-- CSS3 -->
 	<link rel="stylesheet" href="./assets/css/main.css">
 
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+	<!-- SEO / Open Graph -->
+	<meta name="description" content="HAGUE — Revista editorial moderna sobre negócios, viagens, política e cultura. Artigos concisos e de tom profissional.">
+	<meta property="og:title" content="HAGUE - Revista Editorial">
+	<meta property="og:description" content="Conteúdos profissionais e concisos sobre negócios, viagens, política e cultura.">
+
 	<!-- REMIXICON CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
-	<title>My Blog</title>
+	<title>HAGUE — Revista Editorial</title>
 </head>
 
 <body>
@@ -26,7 +37,7 @@
 			</div>
 
 			<button class="subscribe-btn">
-				Subscribe
+				Subscrever
 			</button>
 		</div>
 
@@ -40,43 +51,43 @@
 			<ul class="nav-list">
 
 				<li class="nav-item active">
-					<a href="#">Home</a>
+					<a href="index.html#home">Início</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Posts</a>
+					<a href="posts.html#posts">Artigos</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Business</a>
+					<a href="index.html#business">Negócios</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Interview</a>
+					<a href="posts.html#interview">Entrevistas</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Politics</a>
+					<a href="index.html#politics">Política</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Travel</a>
+					<a href="index.html#travel">Viagens</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Author list</a>
+					<a href="about.html#authors">Autores</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Pricing</a>
+					<a href="index.html#membership">Subscrição</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Latest</a>
+					<a href="index.html#latest">Destaques</a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#">Newsletter</a>
+					<a href="index.html#newsletter">Boletim</a>
 				</li>
 
 			</ul>
@@ -85,7 +96,7 @@
 	</header>
 
 	<!-- HERO SECTION -->
-	<section class="hero">
+	<section id="home" class="hero">
 
 		<!-- LEFT POSTS -->
 		<aside class="hero-left">
@@ -93,21 +104,21 @@
 			<article class="small-post">
 
 				<div class="small-post-image">
-					<img src="./assets/img/post-1.jpg" alt="Post image">
+					<img src="./assets/img/post-1.jpg" alt="Post image" width="420" height="280" loading="lazy">
 				</div>
 
 				<div class="small-post-content">
 
-					<span class="category">
-						BOOKS
-					</span>
+						<span class="category">
+							LIVROS
+						</span>
 
-					<h3>
-						Hero-Half Post Example
-					</h3>
+						<h3>
+							<a href="https://www.bbc.com" target="_blank" rel="noopener">Exemplo de artigo principal</a>
+						</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 				</div>
@@ -117,22 +128,22 @@
 			<article class="small-post">
 
 				<div class="small-post-image">
-					<img src="./assets/img/post-2.jpg" alt="Post image">
+					<img src="./assets/img/post-2.jpg" alt="Post image" width="420" height="280" loading="lazy">
 				</div>
 
 				<div class="small-post-content">
 
-					<div class="categories">
-						<span>BOOKS</span>
-						<span>POLITICS</span>
-					</div>
+						<div class="categories">
+							<span>LIVROS</span>
+							<span>POLÍTICA</span>
+						</div>
 
-					<h3>
-						I decided to move out of the house
-					</h3>
+						<h3>
+							Decidi mudar-me de casa
+						</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 				</div>
@@ -146,28 +157,26 @@
 		<main class="hero-main">
 
 			<div class="hero-image">
-				<img src="./assets/img/hero.jpg" alt="Hero image">
+					<img src="./assets/img/hero.jpg" alt="Hero image" width="1200" height="500" loading="eager">
 			</div>
 
 			<div class="hero-content">
 
 				<span class="hero-category">
-					OPINION
+					OPINIÃO
 				</span>
 
 				<h1>
-					When you tell them the truth
+					Quando lhes disser a verdade
 				</h1>
 
 				<p>
-					El mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel.
-					Pro saepe maluisset ne, audire maiorum forensibus eos te.
-					Diceret detraxit vis at. Eum et idque tollit assentior.
+					Texto conciso e objetivo sobre uma perspetiva editorial. Análise clara e fundamentada.
 				</p>
 
 				<div class="hero-meta">
-					<span>January 8, 2025</span>
-					<span>Isabella and Lucas</span>
+					<span>8 de janeiro de 2025</span>
+					<span>Isabella e Lucas</span>
 				</div>
 
 			</div>
@@ -177,52 +186,56 @@
 
 		<!-- RIGHT SIDEBAR -->
 		<aside class="hero-right">
+				<span id="latest" style="display:none"></span>
 
 			<h4 class="latest-title">
-				LATEST
+				DESTAQUES
 			</h4>
 
+				<div class="latest-post">
+
+					<div>
+						<h5>Resumo 2024</h5>
+						<p>4 de janeiro de 2025</p>
+					</div>
+
+					<figure>
+						<img src="./assets/img/latest-1.jpg" alt="Latest" width="75" height="75" loading="lazy">
+						<figcaption class="sr-only">Capa do artigo "2024 unwrapped"</figcaption>
+					</figure>
+
+				</div>
+
 			<div class="latest-post">
 
 				<div>
-					<h5>This is my 2024 unwrapped</h5>
-					<p>January 4, 2025</p>
+					<h5>Rebel Wilson casou com Ramona Agruma em Sydney</h5>
+					<p>9 de janeiro de 2025</p>
 				</div>
 
-				<img src="./assets/img/latest-1.jpg" alt="Latest">
+				<img src="./assets/img/latest-2.jpg" alt="Destaque" width="75" height="75" loading="lazy">
 
 			</div>
 
 			<div class="latest-post">
 
 				<div>
-					<h5>Rebel Wilson weds Ramona Agruma in Sydney</h5>
-					<p>January 9, 2025</p>
+					<h5>Quando lhes disser a verdade</h5>
+					<p>8 de janeiro de 2025</p>
 				</div>
 
-				<img src="./assets/img/latest-2.jpg" alt="Latest">
+				<img src="./assets/img/latest-3.jpg" alt="Destaque" width="75" height="75" loading="lazy">
 
 			</div>
 
 			<div class="latest-post">
 
 				<div>
-					<h5>When you tell them the truth</h5>
-					<p>January 8, 2025</p>
+					<h5>Exemplo de artigo principal</h5>
+					<p>8 de janeiro de 2025</p>
 				</div>
 
-				<img src="./assets/img/latest-3.jpg" alt="Latest">
-
-			</div>
-
-			<div class="latest-post">
-
-				<div>
-					<h5>Hero-Half Post Example</h5>
-					<p>January 8, 2025</p>
-				</div>
-
-				<img src="./assets/img/latest-4.jpg" alt="Latest">
+				<img src="./assets/img/latest-4.jpg" alt="Destaque" width="75" height="75" loading="lazy">
 
 			</div>
 
@@ -231,12 +244,12 @@
 	</section>
 
 	<!-- CATEGORY SECTIONS -->
-	<section class="category-section">
+	<section id="business" class="category-section">
 
 		<!-- BUSINESS -->
 		<div class="category-header">
-			<h2>BUSINESS</h2>
-			<a href="#">View all ›</a>
+			<h2>NEGÓCIOS</h2>
+			<a href="#">Ver todos ›</a>
 		</div>
 
 		<div class="post-grid">
@@ -249,19 +262,19 @@
 
 				<div class="card-content">
 
-					<span>BUSINESS</span>
+							<span>NEGÓCIOS</span>
 
-					<h3>
-						I'm a high school graduate
-					</h3>
+							<h3>
+								Concluí o ensino secundário
+							</h3>
 
-					<p class="date">
-						January 8, 2025
-					</p>
+							<p class="date">
+								8 de janeiro de 2025
+							</p>
 
-					<p class="excerpt">
-						Que harum remore putant in, his te cibo liberavisse.
-					</p>
+							<p class="excerpt">
+								Resumo sucinto e informativo sobre desenvolvimento profissional.
+							</p>
 
 				</div>
 
@@ -276,18 +289,18 @@
 
 				<div class="card-content">
 
-					<span>BUSINESS</span>
+					<span>NEGÓCIOS</span>
 
 					<h3>
-						My entrance exam was on a look of matches
+						O meu exame de entrada foi decisivo
 					</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 					<p class="excerpt">
-						El mei scripta intellegat. Verear voluptaria.
+						Análise sumária das repercussões no ensino e mercado de trabalho.
 					</p>
 
 				</div>
@@ -303,18 +316,18 @@
 
 				<div class="card-content">
 
-					<span>BUSINESS • INTERVIEW</span>
+					<span>NEGÓCIOS • ENTREVISTA</span>
 
 					<h3>
-						My name is Rhoda Morgenstern
+						Chamo-me Rhoda Morgenstern
 					</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 					<p class="excerpt">
-						Lorem ipsum dolor sit amet, consectetur.
+						Entrevista objetiva sobre carreira e tendências do setor.
 					</p>
 
 				</div>
@@ -330,18 +343,18 @@
 
 				<div class="card-content">
 
-					<span>BUSINESS</span>
+					<span>NEGÓCIOS</span>
 
 					<h3>
-						Tonight what heights we'll hit
+						Alturas que alcançaremos esta noite
 					</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 					<p class="excerpt">
-						Labore incorrupti vim at, id augue possim.
+						Perspetivas sobre desafios e oportunidades empresariais.
 					</p>
 
 				</div>
@@ -352,9 +365,9 @@
 
 
 		<!-- TRAVEL -->
-		<div class="category-header travel-header">
-			<h2>TRAVEL</h2>
-			<a href="#">View all ›</a>
+		<div id="travel" class="category-header travel-header">
+			<h2>VIAGENS</h2>
+			<a href="#">Ver todos ›</a>
 		</div>
 
 		<div class="post-grid">
@@ -367,19 +380,19 @@
 
 				<div class="card-content">
 
-					<span>TRAVEL</span>
+						<span>VIAGENS</span>
 
-					<h3>
-						The first thing I remember liking
-					</h3>
+						<h3>
+							A primeira coisa de que gostei
+						</h3>
 
-					<p class="date">
-						January 8, 2025
-					</p>
+						<p class="date">
+							8 de janeiro de 2025
+						</p>
 
-					<p class="excerpt">
-						Ius ex rebum nostrum efficiantur.
-					</p>
+						<p class="excerpt">
+							Relato sucinto sobre experiências de viagem.
+						</p>
 
 				</div>
 
@@ -394,18 +407,18 @@
 
 				<div class="card-content">
 
-					<span>TRAVEL</span>
+					<span>VIAGENS</span>
 
 					<h3>
-						Last Trip to Pakistan
+						Última viagem ao Paquistão
 					</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 					<p class="excerpt">
-						Iusta fabulas singulis et ius.
+						Observações concisas sobre logística e segurança.
 					</p>
 
 				</div>
@@ -421,18 +434,18 @@
 
 				<div class="card-content">
 
-					<span>TRAVEL</span>
+					<span>VIAGENS</span>
 
 					<h3>
-						Post Gallery – Slider
+						Galeria de publicações – Slider
 					</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 					<p class="excerpt">
-						Posuere assueverit ea vim.
+						Seleção de imagens e relatos de viagem.
 					</p>
 
 				</div>
@@ -448,18 +461,18 @@
 
 				<div class="card-content">
 
-					<span>TRAVEL</span>
+					<span>VIAGENS</span>
 
 					<h3>
-						We vote for our rights
+						Votamos pelos nossos direitos
 					</h3>
 
 					<p class="date">
-						January 8, 2025
+						8 de janeiro de 2025
 					</p>
 
 					<p class="excerpt">
-						Hey there. This is an excerpt.
+						Enfoque social e cultural das deslocações.
 					</p>
 
 				</div>
@@ -471,12 +484,12 @@
 	</section>
 
 	<!-- POLITICS SECTION -->
-	<section class="featured-section">
+	<section id="politics" class="featured-section">
 
 		<!-- HEADER -->
 		<div class="category-header">
-			<h2>POLITICS</h2>
-			<a href="#">View all ›</a>
+			<h2>POLÍTICA</h2>
+			<a href="#">Ver todos ›</a>
 		</div>
 
 		<div class="featured-layout">
@@ -485,18 +498,18 @@
 			<div class="featured-main">
 
 				<div class="featured-image">
-					<img src="./assets/img/politics-main.jpg" alt="">
+					<img src="./assets/img/politics-main.jpg" alt="Imagem política principal" width="800" height="420" loading="lazy">
 				</div>
 
 				<div class="featured-content">
 
 					<div class="featured-tags">
-						<span>BOOKS</span>
-						<span>POLITICS</span>
+						<span>LIVROS</span>
+						<span>POLÍTICA</span>
 					</div>
 
 					<h2>
-						I decided to move out of the house
+						Decidi mudar-me de casa
 					</h2>
 
 					<p class="featured-text">
@@ -506,8 +519,8 @@
 					</p>
 
 					<div class="featured-meta">
-						<span>January 8, 2025</span>
-						<span>by Lucas</span>
+						<span>8 de janeiro de 2025</span>
+						<span>por Lucas</span>
 					</div>
 
 				</div>
@@ -520,18 +533,19 @@
 
 				<article class="sidebar-post">
 
-					<img src="./assets/img/politics-1.jpg" alt="">
+					<img src="./assets/img/politics-1.jpg" alt="Política 1" width="120" height="90" loading="lazy">
 
 					<div class="sidebar-content">
 
-						<span>POLITICS</span>
+
+						<span>POLÍTICA</span>
 
 						<h4>
-							New York, this is your last chance
+							Nova Iorque, esta é a última oportunidade
 						</h4>
 
 						<p class="date">
-							January 8, 2025
+							8 de janeiro de 2025
 						</p>
 
 					</div>
@@ -541,18 +555,19 @@
 
 				<article class="sidebar-post">
 
-					<img src="./assets/img/politics-2.jpg" alt="">
+					<img src="./assets/img/politics-2.jpg" alt="Política 2" width="120" height="90" loading="lazy">
 
 					<div class="sidebar-content">
 
-						<span>POLITICS</span>
+
+						<span>POLÍTICA</span>
 
 						<h4>
-							Helping to Protect the Kidnapped Basin
+							Proteção da bacia sequestrada
 						</h4>
 
 						<p class="date">
-							January 8, 2025
+							8 de janeiro de 2025
 						</p>
 
 					</div>
@@ -562,18 +577,19 @@
 
 				<article class="sidebar-post">
 
-					<img src="./assets/img/politics-3.jpg" alt="">
+					<img src="./assets/img/politics-3.jpg" alt="Política 3" width="120" height="90" loading="lazy">
 
 					<div class="sidebar-content">
 
-						<span>POLITICS</span>
+
+						<span>POLÍTICA</span>
 
 						<h4>
-							An Old Man Telling Me About Wars
+							Um velho a falar-me sobre guerras
 						</h4>
 
 						<p class="date">
-							January 8, 2025
+							8 de janeiro de 2025
 						</p>
 
 					</div>
@@ -583,18 +599,19 @@
 
 				<article class="sidebar-post">
 
-					<img src="./assets/img/politics-4.jpg" alt="">
+					<img src="./assets/img/politics-4.jpg" alt="Política 4" width="120" height="90" loading="lazy">
 
 					<div class="sidebar-content">
 
-						<span>OPINION • POLITICS</span>
+
+						<span>OPINIÃO • POLÍTICA</span>
 
 						<h4>
-							Enter at your peril, past the vault door
+							Entre por sua conta e risco, além da porta do cofre
 						</h4>
 
 						<p class="date">
-							January 8, 2025
+							8 de janeiro de 2025
 						</p>
 
 					</div>
@@ -611,26 +628,26 @@
 	<section class="media-section">
 
 		<div class="category-header">
-			<h2>FEATURED VIDEO</h2>
-			<a href="#">View all ›</a>
+			<h2>VÍDEO EM DESTAQUE</h2>
+			<a href="#">Ver todos ›</a>
 		</div>
 
 		<div class="video-wrapper">
 
-			<iframe width="100%" height="500" src="https://www.youtube.com/embed/vxULs-R7Jl4" 
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-				allowfullscreen></iframe>
+			<video controls poster="./assets/img/video-poster.jpg" width="100%" height="500">
+				<source src="./assets/video/sample.mp4" type="video/mp4">
+				O seu navegador não suporta o elemento de vídeo.
+			</video>
 
 			<div class="video-content">
-				<span>DOCUMENTARY</span>
+				<span>DOCUMENTÁRIO</span>
 
 				<h2>
-					The untold story behind modern cities
+					A história não contada das cidades modernas
 				</h2>
 
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Quisquam ratione natus molestiae.
+					Síntese profissional e objetiva sobre o desenvolvimento urbano contemporâneo.
 				</p>
 			</div>
 
@@ -644,7 +661,7 @@
 
 		<div class="category-header">
 			<h2>PODCAST</h2>
-			<a href="#">View all ›</a>
+			<a href="#">Ver todos ›</a>
 		</div>
 
 		<div class="podcast-card">
@@ -654,12 +671,11 @@
 				<span>PODCAST EP. 24</span>
 
 				<h3>
-					How technology is changing journalism
+					Como a tecnologia está a transformar o jornalismo
 				</h3>
 
 				<p>
-					Hear insights from editors and creators discussing the
-					future of digital publishing.
+					Conversas concisas com editores e criadores sobre o futuro da publicação digital.
 				</p>
 
 				<audio controls>
@@ -674,47 +690,47 @@
 
 
 	<!-- TABLE SECTION -->
-	<section class="pricing-section">
+	<section id="membership" class="pricing-section">
 
 		<div class="category-header">
-			<h2>MEMBERSHIP</h2>
-			<a href="#">Pricing ›</a>
+			<h2>SUBSCRIÇÃO</h2>
+			<a href="#">Preços ›</a>
 		</div>
 
 		<div class="table-wrapper">
 
 			<table>
-
+				<caption>Planos de Subscrição</caption>
 				<thead>
 					<tr>
-						<th>Plan</th>
-						<th>Articles</th>
-						<th>Newsletter</th>
-						<th>Price</th>
+						<th>Plano</th>
+						<th>Artigos</th>
+						<th>Boletim</th>
+						<th>Preço</th>
 					</tr>
 				</thead>
 
 				<tbody>
 
 					<tr>
-						<td>Free</td>
-						<td>Limited</td>
-						<td>No</td>
-						<td>$0</td>
+						<td>Gratuito</td>
+						<td>Limitado</td>
+						<td>Não</td>
+						<td>€0</td>
 					</tr>
 
 					<tr>
 						<td>Premium</td>
-						<td>Unlimited</td>
-						<td>Yes</td>
-						<td>$9/mo</td>
+						<td>Ilimitado</td>
+						<td>Sim</td>
+						<td>9 €/mês</td>
 					</tr>
 
 					<tr>
-						<td>Business</td>
-						<td>Unlimited</td>
-						<td>Priority</td>
-						<td>$29/mo</td>
+						<td>Empresarial</td>
+						<td>Ilimitado</td>
+						<td>Prioritário</td>
+						<td>29 €/mês</td>
 					</tr>
 
 				</tbody>
@@ -732,21 +748,21 @@
 		<div class="newsletter-box">
 
 			<h2>
-				Subscribe to our Newsletter
+				Subscreva o nosso Boletim
 			</h2>
 
 			<p>
-				Get weekly stories, news and exclusive updates.
+				Receba semanalmente artigos, notícias e atualizações exclusivas.
 			</p>
 
 			<form class="newsletter-form">
 
-				<input type="text" placeholder="Your Name">
+				<input type="text" placeholder="Nome">
 
-				<input type="email" placeholder="Your Email">
+				<input type="email" placeholder="Email">
 
 				<button type="submit">
-					Subscribe
+					Subscrever
 				</button>
 
 			</form>
@@ -765,33 +781,33 @@
 				<h2>HAGUE</h2>
 
 				<p>
-					A modern editorial magazine focused on business,
-					travel, politics and culture.
+					Uma revista editorial moderna dedicada a negócios,
+					viagens, política e cultura.
 				</p>
 			</div>
 
 			<div class="footer-links">
 
-				<h4>Categories</h4>
+				<h4>Categorias</h4>
 
 				<ul>
-					<li><a href="#">Business</a></li>
-					<li><a href="#">Politics</a></li>
-					<li><a href="#">Travel</a></li>
-					<li><a href="#">Interview</a></li>
+					<li><a href="index.html#business">Negócios</a></li>
+					<li><a href="index.html#politics">Política</a></li>
+					<li><a href="index.html#travel">Viagens</a></li>
+					<li><a href="posts.html#interview">Entrevistas</a></li>
 				</ul>
 
 			</div>
 
 			<div class="footer-links">
 
-				<h4>Company</h4>
+				<h4>Empresa</h4>
 
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Newsletter</a></li>
+					<li><a href="about.html">Sobre</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="index.html#membership">Preços</a></li>
+					<li><a href="index.html#newsletter">Boletim</a></li>
 				</ul>
 
 			</div>

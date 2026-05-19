@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Contacto — formulário acessível e profissional.">
+    <title>Contacto — HAGUE</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-icons">
+                <i class="ri-menu-line"></i>
+                <i class="ri-search-line"></i>
+            </div>
+            <button class="subscribe-btn">Subscrever</button>
+        </div>
+
+        <div class="logo-container">
+            <h1 class="logo">HAGUE</h1>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html#home">Início</a></li>
+                <li class="nav-item"><a href="posts.html#posts">Artigos</a></li>
+                <li class="nav-item"><a href="index.html#business">Negócios</a></li>
+                <li class="nav-item"><a href="posts.html#interview">Entrevistas</a></li>
+                <li class="nav-item"><a href="index.html#politics">Política</a></li>
+                <li class="nav-item"><a href="index.html#travel">Viagens</a></li>
+                <li class="nav-item"><a href="about.html#authors">Autores</a></li>
+                <li class="nav-item"><a href="index.html#membership">Subscrição</a></li>
+                <li class="nav-item"><a href="index.html#latest">Destaques</a></li>
+                <li class="nav-item active"><a href="index.html#newsletter">Boletim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact" class="category-section">
+        <div class="category-header">
+            <h2>CONTACTO</h2>
+            <a href="#">Instruções ›</a>
+        </div>
+
+        <form action="#" method="post" class="newsletter-box" novalidate>
+            <fieldset>
+                <legend>Formulário de contacto</legend>
+
+                <label for="name">Nome completo</label>
+                <input id="name" name="name" type="text" required minlength="2" placeholder="Nome completo">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="nome@exemplo.com">
+
+                <label for="phone">Telemóvel</label>
+                <input id="phone" name="phone" type="tel" pattern="[0-9+\-()\s]{6,20}" placeholder="+351 9xx xxx xxx">
+
+                <label for="subject">Assunto</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Escolha...</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="conteudo">Conteúdo</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Escreva a sua mensagem"></textarea>
+
+                <label>
+                    <input type="checkbox" name="consent" required> Li e aceito a política de privacidade.
+                </label>
+
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>HAGUE</h2>
+                <p>Tonalidade profissional e conteúdos objetivos.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="index.html#latest">Destaques</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Externos</h4>
+                <ul>
+                    <li><a href="https://www.bbc.com" target="_blank" rel="noopener">BBC</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Hague Magazine. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
