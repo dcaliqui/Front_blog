@@ -1,0 +1,26 @@
+/* Base Styles */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+.glass-effect {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.page {
+    background: var(--background);
+    color: var(--on-surface);
+    font-family: var(--font-body);
+    padding-top: 80px;
+}
+
+.site-nav__inner,
+.hero__inner,
+.section,
+.site-footer__inner {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto;
+}

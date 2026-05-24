@@ -1,12 +1,46 @@
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    vertical-align: middle;
-}
+/* ============================================
+ * Main CSS File - Imports all organized CSS modules
+ * ============================================
+ * This file serves as the entry point that imports
+ * all CSS organized into modular, manageable files
+ * ============================================
+ */
 
-.glass-effect {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
+/* 1. Variables & CSS Custom Properties */
+@import url('./css/variables.css');
+
+/* 2. CSS Reset & Normalization */
+@import url('./css/reset.css');
+
+/* 3. Base Styles */
+@import url('./css/base.css');
+
+/* 4. Animations & Keyframes */
+@import url('./css/animations.css');
+
+/* 5. Navigation Component */
+@import url('./css/navigation.css');
+
+/* 6. Hero Section */
+@import url('./css/hero.css');
+
+/* 7. Reusable Components */
+@import url('./css/components.css');
+
+/* 8. Destination Cards */
+@import url('./css/destination-cards.css');
+
+/* 9. Audio Section */
+@import url('./css/audio-section.css');
+
+/* 10. Footer */
+@import url('./css/footer.css');
+
+/* 11. Responsive Design & Media Queries */
+@import url('./css/responsive.css');
+
+/* 12. Utility Classes */
+@import url('./css/utilities.css');
 
 /* Semantic layout classes to replace utility-class-heavy markup */
 .page {

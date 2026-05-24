@@ -1,0 +1,220 @@
+/* Media Queries & Responsive Styles */
+
+/* Mobile Specific (max-width: 767px) */
+@media (max-width: 767px) {
+    .nav-brand span {
+        display: inline;
+    }
+
+    .site-nav__links--desktop,
+    .site-nav__cta {
+        display: none;
+    }
+
+    /* Mobile menu hamburger */
+    body:has(#nav-toggle:checked) .nav-brand span {
+        display: none;
+    }
+
+    .site-nav__toggle {
+        display: flex;
+    }
+
+    .content-layout__columns {
+        grid-template-columns: 1fr;
+    }
+
+    .site-nav__links--desktop {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+    }
+
+    ul.md\:flex {
+        display: none;
+    }
+
+    .explore-btn {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .music-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .music-card__art {
+        margin: 0 auto;
+    }
+
+    .music-card__audio {
+        margin-top: 1.25rem;
+    }
+
+    .cultura-section {
+        font-size: 0.9rem;
+    }
+
+    .cultura-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .cultura-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .cultura-table {
+        font-size: 0.8rem;
+        min-width: 420px;
+    }
+
+    .cultura-table th,
+    .cultura-table td {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/* Desktop Specific (min-width: 768px) */
+@media (min-width: 768px) {
+    .nav-brand span {
+        display: inline;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .content-layout__columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+    }
+
+    .hero__actions {
+        flex-direction: row;
+    }
+
+    .section__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .hero-title {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .site-footer__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .site-footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:flex-row {
+        flex-direction: row;
+    }
+
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .md\:items-end {
+        align-items: flex-end;
+    }
+
+    .md\:p-16 {
+        padding: 4rem;
+    }
+
+    .md\:px-margin-desktop {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .md\:text-display-lg {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.02em;
+        font-weight: 800;
+    }
+
+    .md\:text-headline-lg {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+
+    .md\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+
+    .cultura-section {
+        font-size: 0.95rem;
+    }
+
+    .cultura-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .cultura-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .cultura-table {
+        font-size: 0.9rem;
+        min-width: 520px;
+    }
+}
+
+/* Larger Screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .lg\:flex-row {
+        flex-direction: row;
+    }
+
+    .lg\:w-1\/2 {
+        width: 50%;
+    }
+}

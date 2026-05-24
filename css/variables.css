@@ -1,0 +1,54 @@
+/* CSS Custom Properties - Material Design Color System */
+:root {
+    --tertiary-fixed-dim: #f6c36a;
+    --error: #c63a2f;
+    --on-secondary: #ffffff;
+    --surface-dim: #e9e0db;
+    --error-container: #f9d8d3;
+    --secondary-fixed: #f6e4b2;
+    --on-error: #ffffff;
+    --surface-bright: #fffaf6;
+    --on-surface-variant: #5a4b46;
+    --secondary-fixed-dim: #e9b84c;
+    --tertiary-container: #d98a1f;
+    --on-tertiary-container: #fffbff;
+    --surface-container-low: #fcf4ef;
+    --on-primary-container: #fffbff;
+    --secondary: #d38a1e;
+    --inverse-primary: #ffd1c9;
+    --tertiary: #9b4a24;
+    --on-tertiary: #ffffff;
+    --on-background: #1f1d1c;
+    --on-primary-fixed-variant: #8f291d;
+    --inverse-surface: #2f2724;
+    --outline: #ad958d;
+    --on-secondary-fixed-variant: #7e5311;
+    --outline-variant: #e7d7cf;
+    --on-secondary-container: #83540f;
+    --surface-container-lowest: #ffffff;
+    --background: #fffaf7;
+    --on-tertiary-fixed: #321600;
+    --on-tertiary-fixed-variant: #8a4b1d;
+    --on-primary: #ffffff;
+    --surface-tint: #e04f38;
+    --on-secondary-fixed: #3c2600;
+    --secondary-container: #f9dda0;
+    --on-error-container: #8f1d14;
+    --surface: #fffaf6;
+    --primary-fixed: #ffe2dc;
+    --surface-container-high: #f1e7e1;
+    --inverse-on-surface: #f7efea;
+    --surface-container: #f6ebe5;
+    --surface-container-highest: #ece0d8;
+    --on-surface: #1f1d1c;
+    --on-primary-fixed: #40100a;
+    --surface-variant: #eee1d9;
+    --primary-container: #ea6e57;
+    --primary-fixed-dim: #ffbfae;
+    --tertiary-fixed: #ffe1b5;
+    --primary: #e04f38;
+    
+    /* Typography */
+    --font-body: "Inter", sans-serif;
+    --font-headline: "Plus Jakarta Sans", sans-serif;
+}
