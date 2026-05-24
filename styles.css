@@ -392,6 +392,25 @@ nav .nav-link:focus,
 /* Mobile menu (CSS-only) */
 .nav-toggle { display: none; }
 
+/* Em mobile, quando o menu está aberto (checkbox marcado), esconder o nome 'Luanda Viva' */
+@media (max-width: 767px) {
+    .nav-brand span {
+        display: inline;
+    }
+    
+    /* Usar :has() para detectar quando o checkbox está marcado */
+    body:has(#nav-toggle:checked) .nav-brand span {
+        display: none;
+    }
+}
+
+/* Mostrar o brand sempre em desktop */
+@media (min-width: 768px) {
+    .nav-brand span {
+        display: inline;
+    }
+}
+
 /* Hamburger button (visible on small screens) */
 .nav-toggle-label {
     display: none;
@@ -420,14 +439,23 @@ nav .nav-link:focus,
     background: #ffffff;
     z-index: 50;
     transform: translateY(-110%);
-    transition: transform 0.28s ease;
+    transition: transform 0.28s ease, opacity 0.2s ease 0.08s, visibility 0s linear 0.28s;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 .mobile-menu ul { padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
 .mobile-menu .mobile-link { display: block; padding: 0.75rem 1rem; border-radius: 8px; color: var(--on-surface); background: transparent; }
 
 /* Toggle states */
-#nav-toggle:checked ~ .mobile-menu { transform: translateY(0); }
+#nav-toggle:checked ~ .mobile-menu { 
+    transform: translateY(0); 
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform 0.28s ease, opacity 0.2s ease, visibility 0s linear 0s;
+}
 #nav-toggle:checked + .nav-toggle-label .bar1 { transform: translateY(6px) rotate(45deg); }
 #nav-toggle:checked + .nav-toggle-label .bar2 { opacity: 0; }
 #nav-toggle:checked + .nav-toggle-label .bar3 { transform: translateY(-6px) rotate(-45deg); }
