@@ -46,7 +46,23 @@
 				<li><a class="nav-link text-secondary dark:text-secondary-fixed font-body-md hover:text-primary transition-colors font-label-md"
 						href="#contacto">Contacto</a></li>
 			</ul>
-			<a class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-label-md hover:opacity-90 active:scale-95 transition-all shadow-md"
+			<!-- Menu móvel (CSS only) -->
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+			<label for="nav-toggle" class="nav-toggle-label md:hidden">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<div class="mobile-menu" aria-hidden="true">
+				<ul role="list">
+					<li><a class="nav-link mobile-link" href="#inicio">Home</a></li>
+					<li><a class="nav-link mobile-link" href="#destinos">Destinos</a></li>
+					<li><a class="nav-link mobile-link" href="#cultura">Cultura</a></li>
+					<li><a class="nav-link mobile-link" href="#contacto">Contacto</a></li>
+				</ul>
+			</div>
+
+			<a class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-label-md hover:opacity-90 active:scale-95 transition-all shadow-md explore-btn"
 				href="#destinos">
 				Explorar
 			</a>
