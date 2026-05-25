@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Luanda Viva - Destinos</title>
+	<meta name="description" content="Conheça os destinos mais emblemáticos de Luanda, da Ilha de Luanda à Fortaleza de São Miguel e ao Mussulo." />
+	<meta property="og:title" content="Luanda Viva - Destinos" />
+	<meta property="og:image" content="images/hero-skyline.png" />
+	<meta property="og:description" content="Conheça os destinos mais emblemáticos de Luanda, da Ilha de Luanda à Fortaleza de São Miguel e ao Mussulo." />
+	<link rel="icon" href="images/icon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+<body class="page page--destinos" id="top">
+	<nav class="site-nav" aria-label="Navegação principal">
+		<div class="site-nav__inner">
+			<a class="site-brand nav-brand" href="home.html">
+				<img alt="Logo Luanda Viva" src="images/icon.png" />
+				<span>Luanda Viva</span>
+			</a>
+			<ul class="site-nav__links site-nav__links--desktop" role="list">
+				<li><a class="site-nav__link nav-link" href="home.html">Home</a></li>
+				<li><a class="site-nav__link nav-link" href="destinos.html" aria-current="page">Destinos</a></li>
+				<li><a class="site-nav__link nav-link" href="cultura.html">Cultura</a></li>
+				<li><a class="site-nav__link nav-link" href="contacto.html">Contacto</a></li>
+			</ul>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+			<label for="nav-toggle" class="nav-toggle-label site-nav__toggle" aria-label="Abrir menu">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<div class="mobile-menu site-nav__mobile" aria-hidden="true">
+				<ul role="list">
+					<li><a class="site-nav__link nav-link mobile-link" href="home.html">Home</a></li>
+					<li><a class="site-nav__link nav-link mobile-link" href="destinos.html" aria-current="page">Destinos</a></li>
+					<li><a class="site-nav__link nav-link mobile-link" href="cultura.html">Cultura</a></li>
+					<li><a class="site-nav__link nav-link mobile-link" href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+			<a class="site-nav__cta explore-btn" href="contacto.html">Falar Connosco</a>
+		</div>
+	</nav>
+	<main>
+		<section class="section section--destinations" id="destinos">
+			<div class="section__header">
+				<div class="reveal reveal--1">
+					<span class="section__eyebrow">Experiências Imperdíveis</span>
+					<h1 class="section__title">Destinos em Destaque</h1>
+				</div>
+				<p class="section__description reveal reveal--2">Explore os contrastes de uma cidade que respira história enquanto abraça o futuro com braços abertos.</p>
+			</div>
+			<div class="cards-grid">
+				<div class="destination-card reveal reveal--1">
+					<div class="destination-card__media">
+						<figure class="destination-card__figure">
+							<img alt="Vista aérea da Ilha de Luanda" loading="lazy" src="images/ilha-de-luanda.jpg" srcset="images/ilha-de-luanda-320.jpg 320w, images/ilha-de-luanda.jpg 512w" sizes="(min-width: 768px) 33vw, 100vw" />
+							<figcaption class="visually-hidden">Vista aérea da Ilha de Luanda.</figcaption>
+						</figure>
+						<div class="destination-card__badge">
+							<span class="material-symbols-outlined destination-card__badge-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+							<span>4.9</span>
+						</div>
+					</div>
+					<div class="destination-card__body">
+						<h2 class="destination-card__title">Ilha de Luanda</h2>
+						<p class="destination-card__text">Uma estreita língua de terra com praias paradisíacas, gastronomia internacional e a melhor vida noturna da cidade.</p>
+						<div class="destination-card__footer">
+							<span class="destination-card__location"><span class="material-symbols-outlined destination-card__location-icon">location_on</span> Luanda</span>
+							<a class="destination-card__link" href="https://www.google.com/search?q=Ilha+de+Luanda" target="_blank" rel="noopener noreferrer">Saber mais <span class="material-symbols-outlined">arrow_forward</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="destination-card reveal reveal--2">
+					<div class="destination-card__media">
+						<figure class="destination-card__figure">
+							<img alt="Fortaleza de São Miguel em Luanda" loading="lazy" src="images/fortaleza-sao-miguel.jpg" srcset="images/fortaleza-sao-miguel-320.jpg 320w, images/fortaleza-sao-miguel.jpg 512w" sizes="(min-width: 768px) 33vw, 100vw" />
+							<figcaption class="visually-hidden">Fortaleza de São Miguel em Luanda.</figcaption>
+						</figure>
+						<div class="destination-card__badge">
+							<span class="material-symbols-outlined destination-card__badge-icon" style="font-variation-settings: 'FILL' 1;">history</span>
+							<span>Histórico</span>
+						</div>
+					</div>
+					<div class="destination-card__body">
+						<h2 class="destination-card__title">Fortaleza de São Miguel</h2>
+						<p class="destination-card__text">O guardião da Baía de Luanda. Explore os azulejos históricos e desfrute de uma vista panorâmica inigualável do skyline.</p>
+						<div class="destination-card__footer">
+							<span class="destination-card__location"><span class="material-symbols-outlined destination-card__location-icon">location_on</span> Ingombota</span>
+							<a class="destination-card__link" href="https://www.google.com/search?q=Fortaleza+de+S%C3%A3o+Miguel+Luanda" target="_blank" rel="noopener noreferrer">Saber mais <span class="material-symbols-outlined">arrow_forward</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="destination-card reveal reveal--3">
+					<div class="destination-card__media">
+						<figure class="destination-card__figure">
+							<img alt="Praia do Mussulo em Luanda" loading="lazy" src="images/mussulo-praia.jpg" srcset="images/mussulo-praia-320.jpg 320w, images/mussulo-praia.jpg 512w" sizes="(min-width: 768px) 33vw, 100vw" />
+							<figcaption class="visually-hidden">Praia do Mussulo em Luanda.</figcaption>
+						</figure>
+						<div class="destination-card__badge">
+							<span class="material-symbols-outlined destination-card__badge-icon" style="font-variation-settings: 'FILL' 1;">beach_access</span>
+							<span>Resort</span>
+						</div>
+					</div>
+					<div class="destination-card__body">
+						<h2 class="destination-card__title">Mussulo</h2>
+						<p class="destination-card__text">Um santuário de tranquilidade. Desconecte-se do mundo nestas águas calmas e areias brancas acessíveis apenas por barco.</p>
+						<div class="destination-card__footer">
+							<span class="destination-card__location"><span class="material-symbols-outlined destination-card__location-icon">location_on</span> Talatona</span>
+							<a class="destination-card__link" href="https://www.google.com/search?q=Praia+do+Mussulo+Luanda" target="_blank" rel="noopener noreferrer">Saber mais <span class="material-symbols-outlined">arrow_forward</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="site-footer__inner">
+			<div class="site-footer__grid footer-card">
+				<div>
+					<div class="site-footer__brand">
+						<img alt="Logo Luanda Viva" loading="lazy" src="images/icon.png" />
+						<h3 class="site-footer__brand-name">Luanda Viva</h3>
+					</div>
+					<p class="site-footer__text">A plataforma oficial para descobrir as maravilhas da capital de Angola, promovendo o turismo e a cultura local.</p>
+					<div class="site-footer__socials">
+						<a class="site-footer__icon" href="https://www.google.com/search?q=Luanda+turismo" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">public</span></a>
+						<a class="site-footer__icon" href="https://www.google.com/search?q=Luanda+fotos" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">photo_camera</span></a>
+						<a class="site-footer__icon" href="https://www.google.com/search?q=Luanda+redes+sociais" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">share</span></a>
+					</div>
+				</div>
+				<div>
+					<h4 class="site-footer__heading">Newsletter</h4>
+					<p class="site-footer__text">Receba as últimas notícias e eventos diretamente no seu email.</p>
+					<div class="site-footer__newsletter">
+						<label class="visually-hidden" for="footer-email">Email</label>
+						<input class="site-footer__input" id="footer-email" name="email" placeholder="Email" type="email" />
+						<button class="site-footer__button" type="button"><span class="material-symbols-outlined">send</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__bottom">
+				<p>© 2024 Luanda Viva. Todos os direitos reservados.</p>
+				<div class="site-footer__meta">
+					<span>Produzido em Angola</span>
+					<span class="info-row">Português <span class="material-symbols-outlined site-footer__meta-icon">language</span></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

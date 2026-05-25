@@ -552,6 +552,141 @@
     line-height: 24px;
 }
 
+.cultura-page__header {
+    max-width: 44rem;
+    margin: 0 auto 2.75rem;
+}
+
+.cultura-page__grid {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.cultura-page__aside {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.cultura-page__table-heading {
+    padding: 1.5rem 1.5rem 0.25rem;
+}
+
+.cultura-page__eyebrow {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.cultura-page__title {
+    margin: 0;
+    color: var(--on-surface);
+    font-family: var(--font-headline);
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.cultura-page__note {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 248, 241, 0.9));
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.cultura-page__note h2 {
+    margin: 0 0 0.75rem;
+    color: var(--on-surface);
+    font-family: var(--font-headline);
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.cultura-page__note p {
+    margin: 0;
+    color: var(--on-surface-variant);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cultura-showcase {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.cultura-showcase__media {
+    height: 18rem;
+    overflow: hidden;
+    background: var(--surface-container);
+}
+
+.cultura-showcase__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cultura-showcase__body {
+    padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.cultura-showcase__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.cultura-showcase__meta span,
+.cultura-showcase__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.cultura-showcase__meta span {
+    padding: 0.45rem 0.7rem;
+    background: var(--surface-container-low);
+    color: var(--primary);
+}
+
+.cultura-showcase__body h2 {
+    margin: 0 0 0.75rem;
+    color: var(--on-surface);
+    font-family: var(--font-headline);
+    font-size: 1.65rem;
+    line-height: 1.25;
+}
+
+.cultura-showcase__body p {
+    margin: 0;
+    color: var(--on-surface-variant);
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.cultura-showcase__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.1rem;
+}
+
+.cultura-showcase__tag {
+    padding: 0.45rem 0.75rem;
+    background: var(--surface-container-low);
+    color: var(--secondary);
+}
+
 .audio-section {
     position: relative;
     min-height: 360px;
@@ -876,6 +1011,22 @@
     .cultura-table td {
         padding: 0.5rem 0.75rem;
     }
+
+    .cultura-page__header {
+        margin-bottom: 2rem;
+    }
+
+    .cultura-showcase__media {
+        height: 15rem;
+    }
+
+    .cultura-showcase__body {
+        padding: 1.25rem 1.25rem 1.5rem;
+    }
+
+    .cultura-showcase__body h2 {
+        font-size: 1.35rem;
+    }
 }
 
 .cultura-card-layout {
@@ -895,6 +1046,21 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .cultura-page__header {
+        margin-bottom: 3rem;
+    }
+
+    .cultura-page__grid {
+        grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.4fr);
+        align-items: start;
+    }
+
+    .cultura-showcase__media {
+        height: 19rem;
+    }
 }
 
 .destinos-header span,
@@ -1040,30 +1206,21 @@
     }
 }
 
-body:has(#inicio:target) .nav-link[href="#inicio"],
-body:has(#destinos:target) .nav-link[href="#destinos"],
-body:has(#cultura:target) .nav-link[href="#cultura"],
-body:has(#contacto:target) .nav-link[href="#contacto"] {
-    color: var(--tertiary-fixed-dim); /* texto amarelo */
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: var(--tertiary-fixed-dim);
-    text-underline-offset: 4px;
-    text-decoration-thickness: 2px;
-    padding-bottom: 0.15rem;
-}
-
-/* Também para links do menu móvel */
-body:has(#inicio:target) .mobile-link[href="#inicio"],
-body:has(#destinos:target) .mobile-link[href="#destinos"],
-body:has(#cultura:target) .mobile-link[href="#cultura"],
-body:has(#contacto:target) .mobile-link[href="#contacto"] {
+body.page--home .site-nav__link[href="home.html"],
+body.page--destinos .site-nav__link[href="destinos.html"],
+body.page--cultura .site-nav__link[href="cultura.html"],
+body.page--contacto .site-nav__link[href="contacto.html"],
+body.page--home .mobile-link[href="home.html"],
+body.page--destinos .mobile-link[href="destinos.html"],
+body.page--cultura .mobile-link[href="cultura.html"],
+body.page--contacto .mobile-link[href="contacto.html"] {
     color: var(--tertiary-fixed-dim);
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--tertiary-fixed-dim);
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
+    padding-bottom: 0.15rem;
 }
 
 :root {
@@ -1548,4 +1705,161 @@ nav .nav-link { color: #000000; }
 @media (min-width: 1024px) {
     .lg\:flex-row { flex-direction: row; }
     .lg\:w-1\/2 { width: 50%; }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.destination-card__figure,
+.content-layout__figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.destination-card__figure img,
+.content-layout__figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-form-card {
+    width: min(880px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.contact-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-inline-size: 0;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.contact-form legend {
+    padding: 0;
+    margin-bottom: 0.25rem;
+    color: var(--on-surface);
+    font-family: var(--font-headline);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-field label {
+    color: var(--on-surface);
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--outline-variant);
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: var(--on-surface);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(224, 79, 56, 0.12);
+}
+
+.contact-form__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form__note {
+    margin: 0;
+    color: var(--on-surface-variant);
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .form-grid--two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .form-field--full {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .hero__panel,
+    .reveal,
+    .fade-in-up,
+    .animate-bounce,
+    .button:hover,
+    .button--secondary:hover,
+    .destination-card:hover,
+    .destination-card:hover .destination-card__media img,
+    .site-footer__icon:hover {
+        animation: none !important;
+        transform: none !important;
+    }
+
+    .site-nav__cta,
+    .site-nav__link,
+    .destination-card,
+    .site-footer__icon,
+    .button,
+    .button--secondary,
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+        transition: none !important;
+    }
 }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Luanda Viva - Cultura</title>
+	<meta name="description" content="Mergulhe na cultura e tradição de Luanda, entre eventos, memórias e património vivo." />
+	<meta property="og:title" content="Luanda Viva - Cultura" />
+	<meta property="og:image" content="images/hero-skyline.png" />
+	<meta property="og:description" content="Mergulhe na cultura e tradição de Luanda, entre eventos, memórias e património vivo." />
+	<link rel="icon" href="images/icon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+<body class="page page--cultura" id="top">
+	<nav class="site-nav" aria-label="Navegação principal">
+		<div class="site-nav__inner">
+			<a class="site-brand nav-brand" href="home.html">
+				<img alt="Logo Luanda Viva" src="images/icon.png" />
+				<span>Luanda Viva</span>
+			</a>
+			<ul class="site-nav__links site-nav__links--desktop" role="list">
+				<li><a class="site-nav__link nav-link" href="home.html">Home</a></li>
+				<li><a class="site-nav__link nav-link" href="destinos.html">Destinos</a></li>
+				<li><a class="site-nav__link nav-link" href="cultura.html" aria-current="page">Cultura</a></li>
+				<li><a class="site-nav__link nav-link" href="contacto.html">Contacto</a></li>
+			</ul>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+			<label for="nav-toggle" class="nav-toggle-label site-nav__toggle" aria-label="Abrir menu">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<div class="mobile-menu site-nav__mobile" aria-hidden="true">
+				<ul role="list">
+					<li><a class="site-nav__link nav-link mobile-link" href="home.html">Home</a></li>
+					<li><a class="site-nav__link nav-link mobile-link" href="destinos.html">Destinos</a></li>
+					<li><a class="site-nav__link nav-link mobile-link" href="cultura.html" aria-current="page">Cultura</a></li>
+					<li><a class="site-nav__link nav-link mobile-link" href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+			<a class="site-nav__cta explore-btn" href="contacto.html">Contactar</a>
+		</div>
+	</nav>
+	<main>
+		<section class="section section--muted cultura-page" id="cultura">
+			<div class="section__header cultura-page__header reveal reveal--1">
+				<span class="section__eyebrow">Agenda Cultural</span>
+				<h1 class="section__title">Cultura e Tradição Luandense</h1>
+				<p class="section__description">Mergulhe no coração da identidade angolana. De festivais de Semba a exposições de arte contemporânea, Luanda é um caldeirão vibrante de criatividade.</p>
+			</div>
+			<div class="cultura-page__grid">
+				<div class="cultura-page__aside reveal reveal--2">
+					<div class="table-card">
+						<div class="cultura-page__table-heading">
+							<span class="cultura-page__eyebrow">Eventos</span>
+							<h2 class="cultura-page__title">Agenda Cultural</h2>
+						</div>
+						<div class="table-card__scroll">
+							<table>
+								<thead>
+									<tr>
+										<th>Evento</th>
+										<th>Local</th>
+										<th>Data</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Festival Nacional de Cultura</td>
+										<td>Centro Cultural</td>
+										<td class="table-card__date">Set 22</td>
+									</tr>
+									<tr>
+										<td>Noite do Semba Tradicional</td>
+										<td>Espaço Bahia</td>
+										<td class="table-card__date">Out 05</td>
+									</tr>
+									<tr>
+										<td>Bienal de Luanda</td>
+										<td>Museu da Moeda</td>
+										<td class="table-card__date">Nov 12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<aside class="cultura-page__note">
+						<h2>Preservação Cultural</h2>
+						<p>Apelamos às comunidades locais na preservação das suas expressões artísticas e rituais sagrados que definem a nossa identidade.</p>
+					</aside>
+				</div>
+				<article class="cultura-showcase reveal reveal--3">
+					<figure class="cultura-showcase__media">
+						<img alt="Dança tradicional de Luanda" loading="lazy" src="images/cultura-tradicional.jpg" srcset="images/cultura-tradicional-320.jpg 320w, images/cultura-tradicional.jpg 512w" sizes="(min-width: 768px) 50vw, 100vw" />
+						<figcaption class="visually-hidden">Dança tradicional de Luanda.</figcaption>
+						</figure>
+						<div class="cultura-showcase__body">
+							<div class="cultura-showcase__meta">
+								<span>PATRIMÓNIO VIVO</span>
+								<span>MATERIAL</span>
+							</div>
+							<h2>Ritmos e Cores que Contam Histórias</h2>
+							<p>Ritmos, cores e histórias que revelam a alma de Luanda. Celebrações, danças e tradições que mantêm viva a identidade cultural da cidade em cada encontro.</p>
+							<div class="cultura-showcase__tags" aria-label="Temas relacionados">
+								<span class="cultura-showcase__tag">Semba</span>
+								<span class="cultura-showcase__tag">Arte</span>
+								<span class="cultura-showcase__tag">História</span>
+							</div>
+						</div>
+					</article>
+			</div>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="site-footer__inner">
+			<div class="site-footer__grid footer-card">
+				<div>
+					<div class="site-footer__brand">
+						<img alt="Logo Luanda Viva" loading="lazy" src="images/icon.png" />
+						<h3 class="site-footer__brand-name">Luanda Viva</h3>
+					</div>
+					<p class="site-footer__text">A plataforma oficial para descobrir as maravilhas da capital de Angola, promovendo o turismo e a cultura local.</p>
+					<div class="site-footer__socials">
+						<a class="site-footer__icon" href="https://www.google.com/search?q=Luanda+turismo" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">public</span></a>
+						<a class="site-footer__icon" href="https://www.google.com/search?q=Luanda+fotos" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">photo_camera</span></a>
+						<a class="site-footer__icon" href="https://www.google.com/search?q=Luanda+redes+sociais" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">share</span></a>
+					</div>
+				</div>
+				<div>
+					<h4 class="site-footer__heading">Newsletter</h4>
+					<p class="site-footer__text">Receba as últimas notícias e eventos diretamente no seu email.</p>
+					<div class="site-footer__newsletter">
+						<label class="visually-hidden" for="footer-email">Email</label>
+						<input class="site-footer__input" id="footer-email" name="email" placeholder="Email" type="email" />
+						<button class="site-footer__button" type="button"><span class="material-symbols-outlined">send</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__bottom">
+				<p>© 2024 Luanda Viva. Todos os direitos reservados.</p>
+				<div class="site-footer__meta">
+					<span>Produzido em Angola</span>
+					<span class="info-row">Português <span class="material-symbols-outlined site-footer__meta-icon">language</span></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
