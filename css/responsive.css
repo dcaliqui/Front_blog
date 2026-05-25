@@ -3,7 +3,7 @@
 /* Mobile Specific (max-width: 767px) */
 @media (max-width: 767px) {
     .nav-brand span {
-        display: inline;
+        display: none !important;
     }
 
     .site-nav__links--desktop,

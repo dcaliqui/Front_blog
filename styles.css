@@ -419,6 +419,63 @@
     font-weight: 700;
 }
 
+@media (max-width: 767px) {
+    .table-card thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .table-card table,
+    .table-card tbody,
+    .table-card tr,
+    .table-card td {
+        display: block;
+        width: 100%;
+    }
+
+    .table-card tr {
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+        border: 1px solid var(--outline-variant);
+        border-radius: 0.5rem;
+        background: #ffffff;
+    }
+
+    .table-card td {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        border: 0;
+        border-bottom: 1px solid var(--outline-variant);
+        padding: 0.8rem 1rem;
+    }
+
+    .table-card td:last-child {
+        border-bottom: 0;
+    }
+
+    .table-card td::before {
+        content: attr(data-label);
+        color: var(--secondary);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        flex: 0 0 auto;
+    }
+
+    .table-card__date {
+        text-align: right;
+    }
+}
+
 .content-layout {
     display: grid;
     gap: 4rem;
@@ -477,21 +534,19 @@
     border: 1px solid var(--outline-variant);
 }
 
-.table-card__scroll {
-    overflow-x: auto;
-}
-
 .table-card table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 520px;
+    table-layout: fixed;
 }
 
 .table-card th,
 .table-card td {
-    padding: 1rem 1.5rem;
-    white-space: nowrap;
+    padding: 0.9rem 1rem;
+    white-space: normal;
     border: 1px solid var(--outline-variant);
+    vertical-align: top;
+    word-break: break-word;
 }
 
 .table-card thead {
@@ -1302,7 +1357,7 @@ ul[role="list"] { list-style: none; margin: 0; padding: 0; }
 /* Em mobile, quando o menu está aberto (checkbox marcado), esconder o nome 'Luanda Viva' */
 @media (max-width: 767px) {
     .nav-brand span {
-        display: inline;
+        display: none;
     }
 
     .site-nav__links--desktop,
@@ -1310,11 +1365,6 @@ ul[role="list"] { list-style: none; margin: 0; padding: 0; }
         display: none;
     }
     
-    /* Usar :has() para detectar quando o checkbox está marcado */
-    body:has(#nav-toggle:checked) .nav-brand span {
-        display: none;
-    }
-
     .site-nav__toggle {
         display: flex;
     }

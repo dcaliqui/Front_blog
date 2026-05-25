@@ -138,21 +138,19 @@
     border: 1px solid var(--outline-variant);
 }
 
-.table-card__scroll {
-    overflow-x: auto;
-}
-
 .table-card table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 520px;
+    table-layout: fixed;
 }
 
 .table-card th,
 .table-card td {
-    padding: 1rem 1.5rem;
-    white-space: nowrap;
+    padding: 0.9rem 1rem;
+    white-space: normal;
     border: 1px solid var(--outline-variant);
+    vertical-align: top;
+    word-break: break-word;
 }
 
 .table-card thead {
